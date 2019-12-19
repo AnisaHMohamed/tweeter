@@ -39,13 +39,14 @@ function renderTweets(tweets) {
 
 $(document).ready(function() {
   const $form = $("#createTweet");
-  // $("#writeTweet").on("click", function(event) {
+    $(".new-tweet").hide()
     $("#writeTweet").click(function() {
       $(".new-tweet").slideToggle( "slow", function() { //text area to be hid
         console.log( "nav write tweet")
 
       });
     });
+
 
   $form.on("submit", function(event) {
     event.preventDefault();
