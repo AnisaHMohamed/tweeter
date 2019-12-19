@@ -8,6 +8,7 @@ $(document).ready(function() {
       $("#counter")
         .text(remainingChar)
         .addClass("over");
+
     } else {
       $("#counter")
         .text(remainingChar)

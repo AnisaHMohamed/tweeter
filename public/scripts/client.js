@@ -3,44 +3,24 @@
  * jQuery is already loaded
  * Reminder: Use (and do all your DOM work in) jQuery's document ready function
  */
-const user = [
-  {
-    user: {
-      name: "Newton",
-      avatars: "https://i.imgur.com/73hZDYK.png",
-      handle: "@SirIsaac"
-    },
-    content: {
-      text:
-        "If I have seen further it is by standing on the shoulders of giants"
-    },
-    created_at: 1461116232227
-  },
-  {
-    user: {
-      name: "Descartes",
-      avatars: "https://i.imgur.com/nlhLi3I.png",
-      handle: "@rd"
-    },
-    content: {
-      text: "Je pense , donc je suis"
-    },
-    created_at: 1461113959088
-  }
-];
+const escape =  function(str) {
+  let div = document.createElement('div');
+  div.appendChild(document.createTextNode(str));
+  return div.innerHTML;
+}
 
 function createTweetElement(tweet) {
   let tweetBody = `<header>
 <div class="nameImg">
-<img src="${tweet.user.avatars}" alt="" />
-<div class="name">${tweet.user.name}</div>
+<img src="${escape(tweet.user.avatars)}" alt="" />
+<div class="name">${escape(tweet.user.name)}</div>
 </div>
-<div class="userName">${tweet.user.handle}</div>
+<div class="userName">${escape(tweet.user.handle)}</div>
 
 </header>
-<p>${tweet.content.text}</p>
+<p>${escape(tweet.content.text)}</p>
 <footer>
-<div class="daysAgo">${tweet.created_at}</div>
+<div class="daysAgo">${escape(tweet.created_at)}</div>
 <div class="references">arefs for like and commenting</div>
 </footer>`;
 
@@ -50,12 +30,52 @@ function createTweetElement(tweet) {
 }
 //renderTweets
 function renderTweets(tweets) {
+  $("#tweets-container").replaceWith("<section id='tweets-container'/>"); //.empty works too
   for (let index = 0; index < tweets.length; index++) {
     let tweet = tweets[index];
-    $("#tweets-container").append(createTweetElement(tweet));
+    $("#tweets-container").prepend(createTweetElement(tweet));
   }
 }
 
 $(document).ready(function() {
-  renderTweets(user);
+  const $form = $("#createTweet");
+  // $("#writeTweet").on("click", function(event) {
+    $("#writeTweet").click(function() {
+      $(".new-tweet").slideToggle( "slow", function() { //text area to be hid
+        console.log( "nav write tweet")
+
+      });
+    });
+
+  $form.on("submit", function(event) {
+    event.preventDefault();
+    $("#textInput").empty()
+    const $inputText = $('#textInput').val();
+    if ($inputText === null || $inputText === ''){
+      alert('empty string')
+    } else if($inputText.length > 140){
+      alert('too long string')
+
+    }else{
+      $.post("/tweets", $form.serialize()).done(function(data) {
+    
+        loadtweets();
+      
+    
+    });
+  }
+  });
+
+  function loadtweets() {
+    $.get("/tweets").then(function(data) {
+      renderTweets(data);
+    });
+  }
+
+  loadtweets();
 });
+
+
+
+
+

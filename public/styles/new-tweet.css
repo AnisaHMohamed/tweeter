@@ -1,0 +1,69 @@
+form textarea {
+  border-bottom-color: black;
+  border-bottom-width: 7px;
+  width: 100%;
+}
+input {
+  float: left;
+
+  border-radius: 4px;
+  padding-left: 11px;
+  border-right-width: 11px;
+  border-left-width: 11px;
+  background-color: lightgrey;
+  border-color: lightgray;
+  padding-left: 2px;
+  margin-left: 11px;
+  height: 40px;
+  line-height: 40px;
+  padding: 0 5px;
+  font-family: "Anton", sans-serif;
+}
+#textInput {
+  border-color: transparent;
+  background-color: #ff5376;
+  font-family: "Anton", sans-serif;
+  height: 50px;
+  border-radius: 4px;
+
+}
+.new-tweet {
+  margin-bottom: 50px;
+}
+.counter {
+  font-family: "Anton", sans-serif;
+  font-weight: 700;
+  float: right;
+}
+.counter.over {
+  color: red;
+}
+textarea #charactersAlert{
+  background: #c51244 !important;
+  padding: 10px !important;
+  border-radius: 0 !important;
+  position: relative; 
+  display: inline-block !important;
+  box-shadow: 1px 1px 1px #aaaaaa;
+  margin-top: 10px;
+}
+#charactersAlert:before{
+  content: '';  
+  width: 0;  
+  height: 0;  
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid #c51244;
+  position: absolute;  
+  top: -10px; 
+}
+h2:after{
+  color: #c51244 !important;
+}
+textarea input, textarea select, textarea .c-choice-option{ 
+  background: #fff0f4; 
+  color: #c51244;
+}
+textarea input, textarea select{ 
+  border: 1px solid #c51244 !important; 
+}

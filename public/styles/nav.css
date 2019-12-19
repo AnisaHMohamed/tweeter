@@ -1,0 +1,20 @@
+nav {
+  font-family: "Anton", sans-serif;
+  height: 120px;
+  width: 100vw;
+  background-color: #f0386b;
+  position: fixed;
+  top: 0;
+  color: white;
+  padding: 1.5em;
+  left: 0px;
+  display: flex;
+  justify-content: space-between;;
+}
+nav span {
+  font-family: "Anton", sans-serif;
+  font-weight: 700;
+  z-index: 1;
+}
+
+
