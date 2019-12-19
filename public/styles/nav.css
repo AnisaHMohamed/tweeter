@@ -15,7 +15,10 @@ nav span {
   font-family: "Anton", sans-serif;
   font-weight: 700;
   z-index: 1;
-  #f0386b
 }
-
+#writeTweet {
+  background-color:#f0386b ;
+  border-color: #f0386b;
+  color: white;
+}
 
