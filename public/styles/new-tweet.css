@@ -38,32 +38,11 @@ input {
 .counter.over {
   color: red;
 }
-textarea #charactersAlert{
-  background: #c51244 !important;
-  padding: 10px !important;
-  border-radius: 0 !important;
-  position: relative; 
-  display: inline-block !important;
-  box-shadow: 1px 1px 1px #aaaaaa;
-  margin-top: 10px;
+#charactersAlert.over {
+  color: red;
+  border: red 3px solid;
 }
-#charactersAlert:before{
-  content: '';  
-  width: 0;  
-  height: 0;  
-  border-left: 10px solid transparent;
-  border-right: 10px solid transparent;
-  border-bottom: 10px solid #c51244;
-  position: absolute;  
-  top: -10px; 
-}
-h2:after{
-  color: #c51244 !important;
-}
-textarea input, textarea select, textarea .c-choice-option{ 
-  background: #fff0f4; 
-  color: #c51244;
-}
-textarea input, textarea select{ 
-  border: 1px solid #c51244 !important; 
+#charactersAlert{
+  color: transparent;
+  border-color: transparent;
 }

@@ -8,10 +8,15 @@ $(document).ready(function() {
       $("#counter")
         .text(remainingChar)
         .addClass("over");
+      $("#charactersAlert")
+        .addClass("over");
 
     } else {
       $("#counter")
         .text(remainingChar)
+        .removeClass("over");
+
+        $("#charactersAlert")
         .removeClass("over");
     }
   });
