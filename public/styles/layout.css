@@ -6,7 +6,7 @@
 
 html {
   box-sizing: border-box;
-  background-color: #6b2d5c;
+  background-color: #3acc8329;
 }
 
 *,
@@ -23,7 +23,7 @@ html {
 
 body {
   color: #545149;
-  background-color: #e2c290;
+  background-color: white;
   font-size: 24px;
   font-family: "Poppins", sans-serif;
   margin-right: 100px;
@@ -32,7 +32,7 @@ body {
 main {
   width: 90%;
   padding-bottom: 52px;
-  background-color: #e2c290;
+  background-color:white;
   margin: auto;
 }
 h2 {

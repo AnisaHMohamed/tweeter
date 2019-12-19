@@ -21,7 +21,16 @@ function createTweetElement(tweet) {
   <p>${escape(tweet.content.text)}</p>
   <footer>
     <div class="daysAgo">${escape(tweet.created_at)}</div>
-    <div class="references">arefs for like and commenting</div>
+    <div class="references">
+    <i class="far fa-flag">    </i> 
+     <i class="fas fa-retweet"> </i>
+    <i class="fas fa-heart"></i>
+
+    
+
+
+
+    </div>
   </footer>`;
 
   return $("<article>")
@@ -49,7 +58,7 @@ $(document).ready(function() {
   
   $("#writeTweet").click(function() {
     $(".new-tweet").slideToggle( "slow", function() { //text area to be hid
-      console.log( "nav write tweet");
+    $("#textInput").focus()
     });
   });
 

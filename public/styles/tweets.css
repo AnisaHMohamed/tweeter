@@ -12,13 +12,35 @@
   display: flex;
   align-items: baseline;
 }
+.references{
+  display: flex;
 
+
+}
 .tweet {
   border-radius: 4px;
-  border: black 3px solid;
+  border: #615bfc 3px solid;
   padding: 10px;
   margin-bottom: 20px;
+ color: #3acc83;
+ font-weight: bold;
+ color: #545149;
 }
+
+/* font-family: "Anton", sans-serif;
+height: 120px;
+width: 100vw;
+background-color: #ccc1ff;
+position: fixed;
+top: 0;
+color: white;
+padding: 1.5em;
+left: 0px;
+display: flex;
+justify-content: space-between;
+border-bottom: #615bfc 3px solid;
+border-radius: 4px; */
+
 .tweet header {
   display: flex;
   border-width: 100px;

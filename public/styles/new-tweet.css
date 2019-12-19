@@ -10,23 +10,47 @@ input {
   padding-left: 11px;
   border-right-width: 11px;
   border-left-width: 11px;
-  background-color: lightgrey;
-  border-color: lightgray;
+  border-color: #ff9185;
+  color: white;
   padding-left: 2px;
   margin-left: 11px;
   height: 40px;
   line-height: 40px;
   padding: 0 5px;
   font-family: "Anton", sans-serif;
+  background-color: #ff9185;
+  
 }
+input:hover{
+  
+  box-shadow: 8px 9px 3px 0px #3acc8363;
+  border-radius: 4px;
+}
+
+
+/* 
+a {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: 0.2s;
+  display: inline-block;
+  margin: 0 20px;
+  text-decoration: none;
+  color: #000;
+}
+
+a:hover {
+  padding-bottom: 20px;
+} */
 #textInput {
   border-color: transparent;
-  background-color: #ff5376;
   font-family: "Anton", sans-serif;
   height: 50px;
   border-radius: 4px;
-
+  background-color: #3acc8329
 }
+
 .new-tweet {
   margin-bottom: 50px;
 }
