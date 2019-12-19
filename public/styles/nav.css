@@ -11,6 +11,7 @@ nav {
   display: flex;
   justify-content: space-between;
   border-bottom:#615bfc 3px solid;
+  z-index: 999;
 
   border-radius: 4px;
 }
@@ -39,21 +40,7 @@ nav span {
 
 }
 
-/* 
-a {
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
-  transition: 0.2s;
-  display: inline-block;
-  margin: 0 20px;
-  text-decoration: none;
-  color: #000;
-}
 
-a:hover {
-  padding-bottom: 20px;
-} */
 
 
 

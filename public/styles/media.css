@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Mobile Styles */
+@media only screen and (max-width: 400px) {
+  body {
+    background-color: #F09A9D; /* Red */
+  }
+}
+
+/* Tablet Styles */
+@media only screen and (max-width: 767px) {
+
+  .tweet .userName {
+    color: #cc9dc6;
+  }
+  .tweet:hover .userName {
+    color: #cc9dc6;
+  }
+  .tweet .references {
+    color: #cc9dc6;
+  }
+  .tweet:hover .references{
+    color: #cc9dc6;
+  }
+}
+
+/* Desktop Styles */
+@media only screen and (min-width: 768px) {
+  
+    body {
+      display: flex;
+      align-items:flex-start;
+      margin-top: 121px;
+      padding-right: 5px;
+      background-color: #B2D6FF; /* Blue */
+
+     }
+
+  }
+
+
+ 
+
+

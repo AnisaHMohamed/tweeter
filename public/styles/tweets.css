@@ -1,13 +1,25 @@
 .tweet:hover {
   box-shadow: 8px 9px 3px 0px #cc9dc6;
 }
-
-.tweet:hover .userName {
-  color: #cc9dc6;
-}
 .userName {
   color: transparent;
 }
+.tweet:hover .userName {
+  color: #cc9dc6;
+}
+.tweet:hover {
+  box-shadow: 8px 9px 3px 0px #cc9dc6;
+}
+
+.references {
+  color: transparent;
+}
+
+.tweet:hover .references {
+  color: #cc9dc6;
+}
+
+
 .nameImg {
   display: flex;
   align-items: baseline;
@@ -25,6 +37,7 @@
  color: #3acc83;
  font-weight: bold;
  color: #545149;
+ background-color:white ;
 }
 
 /* font-family: "Anton", sans-serif;

@@ -8,16 +8,23 @@ $(document).ready(function() {
       $("#counter")
         .text(remainingChar)
         .addClass("over");
+
       $("#charactersAlert")
-        .addClass("over");
+      .addClass("over");
+      
+      $('.references')
+      .addClass("over")
 
     } else {
       $("#counter")
-        .text(remainingChar)
-        .removeClass("over");
+      .text(remainingChar)
+      .removeClass("over");
 
-        $("#charactersAlert")
-        .removeClass("over");
+      $("#charactersAlert")
+      .removeClass("over");
+        
+      $('.references')
+      .removeClass("over")
     }
   });
 });

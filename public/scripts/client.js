@@ -3,15 +3,14 @@
  * jQuery is already loaded
  * Reminder: Use (and do all your DOM work in) jQuery's document ready function
  */
-const escape =  function(str) {
-  let div = document.createElement('div');
+const escape = function(str) {
+  let div = document.createElement("div");
   div.appendChild(document.createTextNode(str));
   return div.innerHTML;
-}
+};
 
 function createTweetElement(tweet) {
-  let tweetBody = 
-  `<header>
+  let tweetBody = `<header>
     <div class="nameImg">
     <img src="${escape(tweet.user.avatars)}" alt="" />
     <div class="name">${escape(tweet.user.name)}</div>
@@ -25,14 +24,9 @@ function createTweetElement(tweet) {
     <i class="far fa-flag">    </i> 
      <i class="fas fa-retweet"> </i>
     <i class="fas fa-heart"></i>
-
-    
-
-
-
     </div>
   </footer>`;
-   return $("<article>")
+  return $("<article>")
     .addClass("tweet")
     .append(tweetBody);
 }
@@ -44,93 +38,71 @@ function renderTweets(tweets) {
   //   $("#tweets-container").prepend(createTweetElement(tweet));
   // }
 
-  tweets.forEach( tweet => {
+  tweets.forEach(tweet => {
     $("#tweets-container").prepend(createTweetElement(tweet));
-  })
+  });
 }
 
 $(document).ready(function() {
-  
   const $form = $("#createTweet");
 
   $(".new-tweet").hide();
-  
+
   $("#writeTweet").click(function() {
-    $(".new-tweet").slideToggle( "slow", function() { //text area to be hid
-    $("#textInput").focus()
+    $(".new-tweet").slideToggle("slow", function() {
+      //text area to be hid
+      $("#textInput").focus();
     });
   });
 
   $form.on("submit", function(event) {
-
     event.preventDefault();
-    const inputText = $('#textInput').val();
-    
-    if (!inputText) { 
-      alert('empty string');
-    } else if(inputText.length > 140) {
-      alert('too long string');
+    const inputText = $("#textInput").val();
+
+    if (!inputText) {
+      alert("empty string");
+    } else if (inputText.length > 140) {
+      alert("too long string");
     } else {
-      $.post("/tweets", $form.serialize())
-      .done(function(data) {
+      $.post("/tweets", $form.serialize()).done(function(data) {
         loadtweets();
-        $("#textInput").val('').empty();
+        $("#textInput")
+          .val("")
+          .empty();
       });
     }
   });
 
   function loadtweets() {
-    $.get("/tweets")
-    .then(function(data) {
+    $.get("/tweets").then(function(data) {
       renderTweets(data);
     });
   }
 
   loadtweets();
-
 });
 
-// new Date(1461113959088)
-// Tue Apr 19 2016 20:59:19 GMT-0400 (Eastern Daylight Time)
-// Date.now()
-// 1576779951249
-// Date.now() - 1461113959088
-// 115666003129
-// 1000 * 60 * 60 * 24
-// 86400000
-// (Date.now() - 1461113959088) / 86400000
-// 1338.7274040625
-
-
-const formatTime = (milliseconds) =>{
+const formatTime = milliseconds => {
   const hour = 1000 * 60 * 60;
   const day = hour * 24;
   const month = day * 30;
-  const year = month *12
-  
-  const hoursAway = Math.floor((Date.now() - milliseconds)/hour)
-  const daysAway = Math.floor((Date.now() - milliseconds)/day)
-  const monthsAway = Math.floor((Date.now() - milliseconds)/month)
-  const yearsAway = Math.floor((Date.now() - milliseconds)/year)
-  if(Date.now() === milliseconds){
-    return "Just now"
-  } else if(yearsAway > 0) {
-    return `${yearsAway} years ago` // months away
+  const year = month * 12;
 
-  } else if(monthsAway > 0) {
-    return `${monthsAway} months ago` // months away
-
-  } else if(daysAway > 0) {
-     return `${$daysAway} days ago` // days away
-
-  } else if(hoursAway > 0 ){
-    return `${hoursAway} hours ago` //hours away
-
-  } else{
-    return 'Recently'
+  const hoursAway = Math.floor((Date.now() - milliseconds) / hour);
+  const daysAway = Math.floor((Date.now() - milliseconds) / day);
+  const monthsAway = Math.floor((Date.now() - milliseconds) / month);
+  const yearsAway = Math.floor((Date.now() - milliseconds) / year);
+  if (Date.now() === milliseconds) {
+    return "Just now";
+  } else if (yearsAway > 0) {
+    return `${yearsAway} years ago`; // months away
+  } else if (monthsAway > 0) {
+    return `${monthsAway} months ago`; // months away
+  } else if (daysAway > 0) {
+    return `${$daysAway} days ago`; // days away
+  } else if (hoursAway > 0) {
+    return `${hoursAway} hours ago`; //hours away
+  } else {
+    return "Recently";
   }
-
-
-
-}
-
+};

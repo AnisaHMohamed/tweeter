@@ -28,21 +28,7 @@ input:hover{
 }
 
 
-/* 
-a {
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
-  transition: 0.2s;
-  display: inline-block;
-  margin: 0 20px;
-  text-decoration: none;
-  color: #000;
-}
 
-a:hover {
-  padding-bottom: 20px;
-} */
 #textInput {
   border-color: transparent;
   font-family: "Anton", sans-serif;
