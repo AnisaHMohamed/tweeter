@@ -20,7 +20,7 @@ function createTweetElement(tweet) {
   </header>
   <p>${escape(tweet.content.text)}</p>
   <footer>
-    <div class="daysAgo">${escape(tweet.created_at)}</div>
+    <div class="daysAgo">${escape(formatTime(tweet.created_at))}</div>
     <div class="references">
     <i class="far fa-flag">    </i> 
      <i class="fas fa-retweet"> </i>
@@ -32,8 +32,7 @@ function createTweetElement(tweet) {
 
     </div>
   </footer>`;
-
-  return $("<article>")
+   return $("<article>")
     .addClass("tweet")
     .append(tweetBody);
 }
@@ -91,7 +90,47 @@ $(document).ready(function() {
 
 });
 
+// new Date(1461113959088)
+// Tue Apr 19 2016 20:59:19 GMT-0400 (Eastern Daylight Time)
+// Date.now()
+// 1576779951249
+// Date.now() - 1461113959088
+// 115666003129
+// 1000 * 60 * 60 * 24
+// 86400000
+// (Date.now() - 1461113959088) / 86400000
+// 1338.7274040625
+
+
+const formatTime = (milliseconds) =>{
+  const hour = 1000 * 60 * 60;
+  const day = hour * 24;
+  const month = day * 30;
+  const year = month *12
+  
+  const hoursAway = Math.floor((Date.now() - milliseconds)/hour)
+  const daysAway = Math.floor((Date.now() - milliseconds)/day)
+  const monthsAway = Math.floor((Date.now() - milliseconds)/month)
+  const yearsAway = Math.floor((Date.now() - milliseconds)/year)
+  if(Date.now() === milliseconds){
+    return "Just now"
+  } else if(yearsAway > 0) {
+    return `${yearsAway} years ago` // months away
+
+  } else if(monthsAway > 0) {
+    return `${monthsAway} months ago` // months away
+
+  } else if(daysAway > 0) {
+     return `${$daysAway} days ago` // days away
+
+  } else if(hoursAway > 0 ){
+    return `${hoursAway} hours ago` //hours away
+
+  } else{
+    return 'Recently'
+  }
 
 
 
+}
 
