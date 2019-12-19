@@ -49,7 +49,6 @@ $(document).ready(function() {
 
   $form.on("submit", function(event) {
     event.preventDefault();
-    $("#textInput").empty()
     const $inputText = $('#textInput').val();
     if ($inputText === null || $inputText === ''){
       alert('empty string')
@@ -60,7 +59,8 @@ $(document).ready(function() {
       $.post("/tweets", $form.serialize()).done(function(data) {
     
         loadtweets();
-      
+        $("#textInput").val('').empty()
+
     
     });
   }
