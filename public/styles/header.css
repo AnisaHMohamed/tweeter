@@ -2,11 +2,11 @@ body > header{
   height: 400px;
   width: 100%;
   text-align: center;
-  margin-top: 120px;
+  margin-top: 129px;
   color: #545149;
   background-color: white;
-  /* background-image: url("https://www.transparenttextures.com/patterns/black-felt.png");
-  This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
-
-
+  width: 574px;
+  margin-left: 31px;
+  margin-bottom: 10px;
+  border-radius: 4px;
 }

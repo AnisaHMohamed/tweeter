@@ -59,16 +59,32 @@ $(document).ready(function() {
     event.preventDefault();
     const inputText = $("#textInput").val();
 
+    // $("#writeTweet").click(function() {
+    //   $(".new-tweet").slideToggle("slow", function() {
+    //     //text area to be hid
+    //     $("#textInput").focus();
+    //   });
+    // });
+
+
+
+
+
     if (!inputText) {
-      alert("empty string");
+      $("#validInput").addClass('alert')
+
     } else if (inputText.length > 140) {
-      alert("too long string");
+      $("#validInput").removeClass('alert')
+
     } else {
-      $.post("/tweets", $form.serialize()).done(function(data) {
+      
+
+      $.post("/tweets", $form.serialize())
+      .done(function(data) {
         loadtweets();
         $("#textInput")
-          .val("")
-          .empty();
+        .val("")
+        .empty();
       });
     }
   });

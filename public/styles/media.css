@@ -26,6 +26,7 @@
   .tweet:hover .references{
     color: #cc9dc6;
   }
+
 }
 
 /* Desktop Styles */
@@ -36,8 +37,22 @@
       align-items:flex-start;
       margin-top: 121px;
       padding-right: 5px;
-      background-color: #B2D6FF; /* Blue */
+      /* background-color: #B2D6FF; Blue */
 
+     }
+  
+     .container {
+       margin-top: 12px;
+     }
+     .tweet p {
+       border-bottom:black solid 4px ;
+     }
+     .name {
+       padding: 20px;
+     }
+     body > header {
+      margin-top: 12px;
+      margin-right: 34px;
      }
 
   }

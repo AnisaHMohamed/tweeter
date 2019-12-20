@@ -10,7 +10,7 @@ nav {
   left: 0px;
   display: flex;
   justify-content: space-between;
-  border-bottom:#615bfc 3px solid;
+  border-bottom: #615bfc 3px solid;
   z-index: 999;
 
   border-radius: 4px;
@@ -21,29 +21,25 @@ nav span {
   z-index: 1;
 }
 #writeTweet {
-  background-color:#ccc1ff;
+  background-color: #ccc1ff;
   border-color: #ccc1ff;
   color: white;
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
-    transition: 0.2s;
-    display: inline-block;
-    margin: 0 20px;
-    text-decoration: none;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: 0.2s;
+  display: inline-block;
+  margin: 0 20px;
+  text-decoration: none;
+  padding: 0px 20px;
 }
 #writeTweet:hover {
   box-shadow: 0px 9px 3px 0px #cc9dc6;
   border-radius: 4px;
-  
-  padding-bottom: 20px;
 
+  padding-bottom: 20px;
 }
 
-
-
-
-
-h2{
-color: #ff9185;
+h2 {
+  color: #ff9185;
 }

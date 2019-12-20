@@ -6,6 +6,8 @@
 }
 .tweet:hover .userName {
   color: #cc9dc6;
+  font-weight: lighter;
+  font-size: medium;
 }
 .tweet:hover {
   box-shadow: 8px 9px 3px 0px #cc9dc6;
@@ -22,7 +24,7 @@
 
 .nameImg {
   display: flex;
-  align-items: baseline;
+  align-items: center;
 }
 .references{
   display: flex;
@@ -34,12 +36,13 @@
   border: #615bfc 3px solid;
   padding: 10px;
   margin-bottom: 20px;
- color: #3acc83;
  font-weight: bold;
  color: #545149;
  background-color:white ;
 }
-
+.daysAgo {
+  font-size: small;;
+}
 /* font-family: "Anton", sans-serif;
 height: 120px;
 width: 100vw;
@@ -53,7 +56,9 @@ display: flex;
 justify-content: space-between;
 border-bottom: #615bfc 3px solid;
 border-radius: 4px; */
-
+.container {
+  background-color: #dff6eb;
+}
 .tweet header {
   display: flex;
   border-width: 100px;
@@ -62,10 +67,19 @@ border-radius: 4px; */
 }
 .tweet p {
   border-bottom: black 10px solid;
+  font-weight: 300;
+  font-size: medium;
+ 
 }
 .tweet footer {
   display: flex;
   border-width: 100px;
   border-color: black;
   justify-content: space-between;
+}
+.nameImg{
+  
+  font-size:initial;
+  
+ 
 }

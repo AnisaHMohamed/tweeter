@@ -5,11 +5,8 @@ form textarea {
 }
 input {
   float: left;
-
   border-radius: 4px;
   padding-left: 11px;
-  border-right-width: 11px;
-  border-left-width: 11px;
   border-color: #ff9185;
   color: white;
   padding-left: 2px;
@@ -19,7 +16,8 @@ input {
   padding: 0 5px;
   font-family: "Anton", sans-serif;
   background-color: #ff9185;
-  
+  padding: 0px 20px;
+
 }
 input:hover{
   
@@ -56,3 +54,12 @@ input:hover{
   color: transparent;
   border-color: transparent;
 }
+#validInput{
+  color: transparent;
+  border-color: transparent;
+}
+#validInput.alert{
+  color: red;
+  border: red 3px solid;
+}
+
