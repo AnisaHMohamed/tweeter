@@ -33,10 +33,6 @@ function createTweetElement(tweet) {
 //renderTweets
 function renderTweets(tweets) {
   $("#tweets-container").replaceWith("<section id='tweets-container'/>"); //.empty works too
-  // for (let index = 0; index < tweets.length; index++) { //-- forEach
-  //   let tweet = tweets[index];
-  //   $("#tweets-container").prepend(createTweetElement(tweet));
-  // }
 
   tweets.forEach(tweet => {
     $("#tweets-container").prepend(createTweetElement(tweet));
@@ -58,16 +54,6 @@ $(document).ready(function() {
   $form.on("submit", function(event) {
     event.preventDefault();
     const inputText = $("#textInput").val();
-
-    // $("#writeTweet").click(function() {
-    //   $(".new-tweet").slideToggle("slow", function() {
-    //     //text area to be hid
-    //     $("#textInput").focus();
-    //   });
-    // });
-
-
-
 
 
     if (!inputText) {
@@ -111,7 +97,7 @@ const formatTime = milliseconds => {
   if (Date.now() === milliseconds) {
     return "Just now";
   } else if (yearsAway > 0) {
-    return `${yearsAway} years ago`; // months away
+    return `${yearsAway} years ago`; // years away
   } else if (monthsAway > 0) {
     return `${monthsAway} months ago`; // months away
   } else if (daysAway > 0) {
