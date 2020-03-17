@@ -70,6 +70,8 @@ border-radius: 4px; */
   font-weight: 300;
   font-size: medium;
   overflow-wrap: break-word;
+  max-width:900px; 
+
  
 }
 .tweet footer {
