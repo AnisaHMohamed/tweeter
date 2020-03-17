@@ -4,6 +4,9 @@
   .tweet {
     width: 575px;
   }
+  .new-tweet {
+    width: 575px;
+  }
   .headshot{
     width:400px;
     height:300px
@@ -64,7 +67,9 @@
      .tweet {
       width: 850px;
     }
-
+    .new-tweet {
+      width: 850px;
+    }
   }
 
 
