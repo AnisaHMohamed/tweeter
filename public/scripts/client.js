@@ -21,8 +21,8 @@ function createTweetElement(tweet) {
   <footer>
     <div class="daysAgo">${escape(formatTime(tweet.created_at))}</div>
     <div class="references">
-    <i class="far fa-flag">    </i> 
-     <i class="fas fa-retweet"> </i>
+    <i class="far fa-flag"></i> 
+     <i class="fas fa-retweet"></i>
     <i class="fas fa-heart"></i>
     </div>
   </footer>`;

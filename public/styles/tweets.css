@@ -2,12 +2,15 @@
   box-shadow: 8px 9px 3px 0px #cc9dc6;
 }
 .userName {
-  color: transparent;
+  color: #cc9dc6;
+  font-size: medium;
+  font-weight: lighter;
+
 }
 .tweet:hover .userName {
-  color: #cc9dc6;
-  font-weight: lighter;
-  font-size: medium;
+  font-weight: bolder;
+
+
 }
 .tweet:hover {
   box-shadow: 8px 9px 3px 0px #cc9dc6;
@@ -15,10 +18,13 @@
 
 .references {
   color: transparent;
+
 }
 
 .tweet:hover .references {
   color: #cc9dc6;
+  font-weight: bolder;
+
 }
 
 
