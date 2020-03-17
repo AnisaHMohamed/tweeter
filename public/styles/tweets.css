@@ -24,7 +24,21 @@
 .tweet:hover .references {
   color: #cc9dc6;
   font-weight: bolder;
-
+}
+.fa-flag:hover {
+  color: #cc9dc6;
+  font-weight: bolder;
+  box-shadow: 8px 9px 3px 0px #cc9dc6;
+}
+.fa-retweet:hover {
+  color: #cc9dc6;
+  font-weight: bolder;
+  box-shadow: 8px 9px 3px 0px #cc9dc6;
+}
+.fa-heart:hover {
+  color: #cc9dc6;
+  font-weight: bolder;
+  box-shadow: 8px 9px 3px 0px #cc9dc6;
 }
 
 
