@@ -16,8 +16,13 @@
   box-shadow: 8px 9px 3px 0px #cc9dc6;
 }
 
-.references {
+.references a{
   color: transparent;
+
+}
+
+.tweet:hover a{
+  color: #cc9dc6;
 
 }
 
@@ -25,22 +30,19 @@
   color: #cc9dc6;
   font-weight: bolder;
 }
-.fa-flag:hover {
+ .fa-flag:hover {
   color: #cc9dc6;
-  font-weight: bolder;
   box-shadow: 8px 9px 3px 0px #cc9dc6;
 }
 .fa-retweet:hover {
   color: #cc9dc6;
-  font-weight: bolder;
   box-shadow: 8px 9px 3px 0px #cc9dc6;
 }
 .fa-heart:hover {
   color: #cc9dc6;
-  font-weight: bolder;
   box-shadow: 8px 9px 3px 0px #cc9dc6;
   
-}
+} 
 
 
 .nameImg {
@@ -64,19 +66,7 @@
 .daysAgo {
   font-size: small;;
 }
-/* font-family: "Anton", sans-serif;
-height: 120px;
-width: 100vw;
-background-color: #ccc1ff;
-position: fixed;
-top: 0;
-color: white;
-padding: 1.5em;
-left: 0px;
-display: flex;
-justify-content: space-between;
-border-bottom: #615bfc 3px solid;
-border-radius: 4px; */
+
 .container {
   background-color: #dff6eb;
 }
@@ -110,11 +100,7 @@ border-radius: 4px; */
  * Heart burst on shuffle
  */
 
-.fa-heart:hover {
-  color: #cc9dc6;
-  font-weight: bolder;
-  box-shadow: 8px 9px 3px 0px #cc9dc6;  
-}
+
 .heart {
   display:none;
 }

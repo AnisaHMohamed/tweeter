@@ -3,7 +3,7 @@ $(document).ready(function() {
     const tweetLength = $(this).val().length;
     const max = 140;
     const remainingChar = max - tweetLength;
-    
+
     if (remainingChar < 0) {
       $("#counter")
         .text(remainingChar)
@@ -14,11 +14,18 @@ $(document).ready(function() {
       
       $('.references')
       .addClass("over")
+      
+      $("#validInput")
+      .removeClass('alert')
+
 
     } else {
       $("#counter")
       .text(remainingChar)
       .removeClass("over");
+
+      $("#validInput")
+      .removeClass('alert')
 
       $("#charactersAlert")
       .removeClass("over");

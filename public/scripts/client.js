@@ -21,16 +21,16 @@ function createTweetElement(tweet) {
   <footer>
     <div class="daysAgo">${escape(formatTime(tweet.created_at))}</div>
     <div class="references">
-    <i class="far fa-flag"></i> 
-     <i class="fas fa-retweet"></i>
+    <a href='#1'> <i class="far fa-flag"></i> </a>
+    <a href='#2'><i class="fas fa-retweet"></i></a>
+    <a href='#3'> <i class="fas fa-heart"></i></a>
+
      <div class="wrapper">
      <div class="heart x1"></div>
      <div class="heart x2"></div>
      <div class="heart x3"></div>
      <div class="heart x4"></div>
      <div class="heart x5"> </div>
-
-    <i class="fas fa-heart"></i>
      <div class="altheart x6"></div>
    </div>
     </div>
@@ -76,12 +76,14 @@ $(document).ready(function() {
  
       $.post("/tweets", $form.serialize())
       .done(function(data) {
+        $("#counter")
+        .text(140)
         loadtweets();
         $("#textInput")
         .val("")
         .empty();
-        $("#counter")
-        .text(140)
+        $("#validInput").removeClass('alert')
+      
       });
       
     }
