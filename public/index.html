@@ -29,6 +29,7 @@
 
     <!-- App JS -->
     <script type="text/javascript" src="/scripts/client.js"></script>
+    
     <!--App Counter-->
     <script
       type="text/javascript"
@@ -41,7 +42,10 @@
     <nav>
       <span>tweeter</span>
       <button id="writeTweet">Write a Tweet!</button>
+   
     </nav>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">    <i class="fas fa-angle-double-up"></i></button>
+
     <header>
       <div>
         <img src="/images/profile-hex.png" />
@@ -69,4 +73,23 @@
       <section id="tweets-container"/>
     </main>
   </body>
+      <!--Top Scroll-->
+  <script>
+    var mybutton = document.getElementById("myBtn");
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+    
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+    </script>
+    
 </html>
