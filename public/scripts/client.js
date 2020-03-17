@@ -56,6 +56,8 @@ $(document).ready(function() {
   $("#writeTweet").click(function() {
     $(".new-tweet").slideToggle("slow", function() {
       //text area to be hid
+      $("#validInput").removeClass('alert')
+
       $("#textInput").focus();
     });
   });
