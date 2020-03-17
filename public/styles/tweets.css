@@ -122,7 +122,7 @@ border-radius: 4px; */
   display:none;
 }
 
-.references:hover .x1 {
+ .references:hover .x1 {
   left: 5%;
   -webkit-transform: scale(0.9);
   -moz-transform: scale(0.9);
@@ -135,8 +135,8 @@ border-radius: 4px; */
   -moz-animation: hideAnimation 0s;
   display: block;
 
-}
-.references:hover .x2 {
+} 
+ .references:hover .x2 {
   left: 25%;
   -webkit-transform: scale(0.6);
   -moz-transform: scale(0.6);
@@ -148,33 +148,34 @@ border-radius: 4px; */
   -moz-animation: hideAnimation 0s;
   display: block;
   
-}
+} 
 
-.references:hover .x3 {
+ .references:hover .x3 {
   left: 55%;
   -webkit-transform: scale(0.8);
   -moz-transform: scale(0.8);
   transform: scale(0.8);
   opacity: 0.8;
   -webkit-animation: moveclouds 20s linear, sideWays 4s ease-in-out infinite alternate;
-  -moz-animation: moveclouds 20s linear infinite, sideWays 4s ease-in-out infinite alternate;
+  -moz-animation: moveclouds 120s linear infinite, sideWays 4s ease-in-out infinite alternate;
   -webkit-animation-fill-mode: forwards;
   -moz-animation: hideAnimation 0s;
   display: block;
   
-}
- 
+} 
+
 .references:hover .x4 {
-    left: 72%;
-    -webkit-transform: scale(0.75);
-    -moz-transform: scale(0.75);
-    transform: scale(0.75);
-    opacity: 0.9;
-    -webkit-animation: moveclouds 18s linear, sideWays 2s ease-in-out infinite alternate;
-    -moz-animation: moveclouds 18s linear infinite, sideWays 0s   -webkit-animation-fill-mode: forwards;
-    -moz-animation: hideAnimation 0s;
-    display: block;
+  left: 72%;
+  -webkit-transform: scale(0.75);
+  -moz-transform: scale(0.75);
+  transform: scale(0.75);
+  opacity: 0.9;
+  -webkit-animation: moveclouds 18s linear, sideWays 2s ease-in-out infinite alternate;
+  -moz-animation: moveclouds 180s linear infinite, sideWays 0s;   -webkit-animation-fill-mode: forwards;
+  -moz-animation: hideAnimation 0s;
+  display: block;
 }
+
 references:hover .x5 {
     left: 88%;
     -webkit-transform: scale(0.8);
@@ -182,7 +183,7 @@ references:hover .x5 {
     transform: scale(0.8);
     opacity: 0.3; 
     -webkit-animation: moveclouds 7s linear, sideWays 1s ease-in-out infinite alternate;
-    -moz-animation: moveclouds 7s linear infinite, sideWays 1s ease-in-out infinite alternate;
+    -moz-animation: moveclouds 70s linear infinite, sideWays 1s ease-in-out infinite alternate;
     -webkit-animation-fill-mode: forwards;
     -moz-animation: hideAnimation 0s;
     display: block;
@@ -196,7 +197,7 @@ references:hover .x6 {
     -moz-animation: hideAnimation 0s;
     display: block;
 
-} 
+}  
 
 @-webkit-keyframes moveclouds { 
     0% { 
@@ -209,10 +210,10 @@ references:hover .x6 {
 
 @keyframes moveclouds {     
     0% { 
-        top: 500px;
+        top: 0px;
     }
     100% { 
-        top: -500px;
+        top: -900px;
     }
 }
 
