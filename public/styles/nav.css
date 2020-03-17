@@ -1,7 +1,7 @@
 nav {
   font-family: "Anton", sans-serif;
   height: 120px;
-  width: 100vw;
+  width: 100%;
   background-color: #ccc1ff;
   position: fixed;
   top: 0;

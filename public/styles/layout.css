@@ -9,6 +9,7 @@ html {
   background-color: #3acc8329;
 }
 
+
 *,
 *:before,
 *:after {
@@ -20,7 +21,7 @@ html {
 /*
  * Global layout stuff
  */
-
+ 
 body {
   color: #545149;
   /* background-color: white; */

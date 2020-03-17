@@ -13,6 +13,10 @@
   .tweet:hover .references{
     color: #cc9dc6;
   }
+  .headshot{
+    width:400px;
+    height:300px
+  }
 
 }
 
