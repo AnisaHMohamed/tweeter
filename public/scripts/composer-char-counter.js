@@ -3,7 +3,7 @@ $(document).ready(function() {
     const tweetLength = $(this).val().length;
     const max = 140;
     const remainingChar = max - tweetLength;
-
+    
     if (remainingChar < 0) {
       $("#counter")
         .text(remainingChar)

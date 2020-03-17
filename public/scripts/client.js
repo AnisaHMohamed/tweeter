@@ -64,15 +64,19 @@ $(document).ready(function() {
 
     } else {
       
-
+ 
       $.post("/tweets", $form.serialize())
       .done(function(data) {
         loadtweets();
         $("#textInput")
         .val("")
         .empty();
+        $("#counter")
+        .text(140)
       });
+      
     }
+    
   });
 
   function loadtweets() {
