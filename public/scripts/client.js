@@ -23,7 +23,16 @@ function createTweetElement(tweet) {
     <div class="references">
     <i class="far fa-flag"></i> 
      <i class="fas fa-retweet"></i>
+     <div class="wrapper">
+     <div class="heart x1"></div>
+     <div class="heart x2"></div>
+     <div class="heart x3"></div>
+     <div class="heart x4"></div>
+     <div class="heart x5"> </div>
+
     <i class="fas fa-heart"></i>
+     <div class="altheart x6"></div>
+   </div>
     </div>
   </footer>`;
   return $("<article>")

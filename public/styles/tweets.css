@@ -39,6 +39,7 @@
   color: #cc9dc6;
   font-weight: bolder;
   box-shadow: 8px 9px 3px 0px #cc9dc6;
+  
 }
 
 
@@ -101,8 +102,164 @@ border-radius: 4px; */
   justify-content: space-between;
 }
 .nameImg{
-  
   font-size:initial;
-  
- 
 }
+
+
+/*
+ * Heart burst on shuffle
+ */
+
+.fa-heart:hover {
+  color: #cc9dc6;
+  font-weight: bolder;
+  box-shadow: 8px 9px 3px 0px #cc9dc6;  
+}
+.heart {
+  display:none;
+}
+.altheart {
+  display:none;
+}
+
+.references:hover .x1 {
+  left: 5%;
+  -webkit-transform: scale(0.9);
+  -moz-transform: scale(0.9);
+  transform: scale(0.9);
+  opacity: 0.6;
+  -webkit-animation: moveclouds 15s linear, sideWays 3s ease-in-out infinite alternate;
+  -moz-animation: moveclouds 150s linear infinite, sideWays 3s ease-in-out infinite alternate;
+
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation: hideAnimation 0s;
+  display: block;
+
+}
+.references:hover .x2 {
+  left: 25%;
+  -webkit-transform: scale(0.6);
+  -moz-transform: scale(0.6);
+  transform: scale(0.6);
+  opacity: 0.9;
+  -webkit-animation: moveclouds 20s linear , sideWays 5s ease-in-out infinite alternate;
+  -moz-animation: moveclouds 130s linear infinite, sideWays 5s ease-in-out infinite alternate;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation: hideAnimation 0s;
+  display: block;
+  
+}
+
+.references:hover .x3 {
+  left: 55%;
+  -webkit-transform: scale(0.8);
+  -moz-transform: scale(0.8);
+  transform: scale(0.8);
+  opacity: 0.8;
+  -webkit-animation: moveclouds 20s linear, sideWays 4s ease-in-out infinite alternate;
+  -moz-animation: moveclouds 20s linear infinite, sideWays 4s ease-in-out infinite alternate;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation: hideAnimation 0s;
+  display: block;
+  
+}
+ 
+.references:hover .x4 {
+    left: 72%;
+    -webkit-transform: scale(0.75);
+    -moz-transform: scale(0.75);
+    transform: scale(0.75);
+    opacity: 0.9;
+    -webkit-animation: moveclouds 18s linear, sideWays 2s ease-in-out infinite alternate;
+    -moz-animation: moveclouds 18s linear infinite, sideWays 0s   -webkit-animation-fill-mode: forwards;
+    -moz-animation: hideAnimation 0s;
+    display: block;
+}
+references:hover .x5 {
+    left: 88%;
+    -webkit-transform: scale(0.8);
+    -moz-transform: scale(0.8);
+    transform: scale(0.8);
+    opacity: 0.3; 
+    -webkit-animation: moveclouds 7s linear, sideWays 1s ease-in-out infinite alternate;
+    -moz-animation: moveclouds 7s linear infinite, sideWays 1s ease-in-out infinite alternate;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation: hideAnimation 0s;
+    display: block;
+}
+references:hover .x6 {
+    left: 33%;
+    opacity: 1; 
+    -webkit-animation: moveclouds 2s linear, swayWays 1s ease-in-out infinite alternate;
+    animation: moveclouds 10s linear infinite, swayWays 9s ease-in-out infinite alternate;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation: hideAnimation 0s;
+    display: block;
+
+} 
+
+@-webkit-keyframes moveclouds { 
+    0% { 
+        top: 500px;
+    }
+    100% { 
+        top: -500px;
+    }
+}
+
+@keyframes moveclouds {     
+    0% { 
+        top: 500px;
+    }
+    100% { 
+        top: -500px;
+    }
+}
+
+@-webkit-keyframes sideWays { 
+    0% { 
+        margin-left:0px;
+    }
+    100% { 
+        margin-left:50px;
+    }
+}
+
+@keyframes sideWays {
+  0% {
+      margin-left:0px;
+  }
+  100% {
+      margin-left:50px;
+  }
+}
+
+@-keyframes swayWays {
+  0% {
+    transform: rotate(12deg);
+    left:-0.3%;
+  }
+  33%{
+    transform: rotate(-2deg);
+    left: 0.7%;
+  }
+  100% {
+    transform: rotate(0deg);
+    left:-12%;
+  }
+}
+@keyframes hideAnimation {
+  to {
+      width:0;
+      height:0;
+      overflow:hidden;
+  }
+}
+@-webkit-keyframes hideAnimation {
+  to {
+      width:0;
+      height:0;
+      visibility:hidden;
+  }
+}
+
