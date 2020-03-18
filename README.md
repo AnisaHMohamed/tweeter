@@ -4,6 +4,8 @@ Spill the Tea is a beautiful single-page Twitter clone.
 
 This app to showcases HTML, CSS, JS, jQuery, WebKit and AJAX front-end skills, as well as my Node, Express and MongoDB back-end skills.
 
+## Final Product
+
 ### Creating a new tweet
 !["Creating a new tweet"](https://github.com/AnisaHMohamed/tweeter/blob/master/docs/new-tweet.gif?raw=true)
 
@@ -23,7 +25,7 @@ This app to showcases HTML, CSS, JS, jQuery, WebKit and AJAX front-end skills, a
 - Express
 - Node 5.10.x or above
 
-## Final Product
+
 
 
 
