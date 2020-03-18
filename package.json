@@ -1,5 +1,5 @@
 {
-  "name": "Spill the Tea",
+  "name": "Spill-the-Tea",
   "version": "1.0.0",
   "description": "A twitter clone by Anisa Mohamed",
   "main": "server/index.js",

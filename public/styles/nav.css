@@ -12,7 +12,6 @@ nav {
   justify-content: space-between;
   border-bottom: #615bfc 3px solid;
   z-index: 999;
-
   border-radius: 4px;
 }
 nav span {
@@ -39,7 +38,6 @@ nav span {
 
   padding-bottom: 20px;
 }
-
 h2 {
   color: #ff9185;
 }
@@ -64,19 +62,4 @@ h2 {
 
 #myBtn:hover {
   background-color: #615bfc; /* Add a dark-grey background on hover */
-}
-.order {
-
-  -webkit-animation: bounce .8s infinite alternate;
-  -moz-animation: bounce .8s infinite alternate;
-  animation: bounce .8s infinite alternate;
-}
-@-webkit-keyframes bounce {
-  to { -webkit-transform: scale(1.2); }
-}
-@-moz-keyframes bounce {
-  to { -moz-transform: scale(1.2); }
-}
-@keyframes bounce {
-  to { transform: scale(1.2); }
 }
