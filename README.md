@@ -19,6 +19,8 @@ This app to showcases HTML, CSS, JS, jQuery, WebKit and AJAX front-end skills, a
 
 
 ## Final Product
+!["Creating a new tweet"](https://github.com/AnisaHMohamed/tweeter/blob/master/docs/new-tweet.gif?raw=true)
+
 !["Home Page Desktop View:registration.png"](https://github.com/AnisaHMohamed/tweeter/blob/master/docs/Screen%20Shot%202019-12-19%20at%208.38.19%20PM.png?raw=true)
 
 !["Home Page Desktop View Toggle tweet:HomePage Toggle Tweet Desktop.png"](https://github.com/AnisaHMohamed/tweeter/blob/master/docs/Homepage%20Desktop%20View.png?raw=true)
