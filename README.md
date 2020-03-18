@@ -19,7 +19,8 @@ This app to showcases HTML, CSS, JS, jQuery, WebKit and AJAX front-end skills, a
 
 
 ## Final Product
+Creating a new tweet
 !["Creating a new tweet"](https://github.com/AnisaHMohamed/tweeter/blob/master/docs/new-tweet.gif?raw=true)
 
-
-!["Validating a tweet"](https://github.com/AnisaHMohamed/tweeter/blob/master/docs/new-tweet.gif?raw=true)
+Validating a tweet
+!["Validating a tweet"](https://github.com/AnisaHMohamed/tweeter/blob/master/docs/validation-tweet.gif?raw=true)
