@@ -1,8 +1,8 @@
-# Tweeter Project
+# Spill The Tea ☕
 
-Tweeter is a simple, single-page Twitter clone.
+Spill the Tea is a beautiful single-page Twitter clone.
 
-An app to showcase HTML, CSS, JS, jQuery and AJAX front-end skills, and my Node, Express and MongoDB back-end skills.
+This app to showcases HTML, CSS, JS, jQuery, WebKit and AJAX front-end skills, as well as my Node, Express and MongoDB back-end skills.
 
 ## Getting Started
 
