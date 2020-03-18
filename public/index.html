@@ -3,7 +3,6 @@
   <head>
     <!-- Meta Information -->
     <title>Tweeter - Home Page</title>
-
     <!-- External CSS -->
     <link rel="stylesheet" href="/vendor/normalize-4.1.1.css" type="text/css" />
     <!-- fonts -->
@@ -12,10 +11,8 @@
       rel="stylesheet"
     />
     <script src="https://use.fontawesome.com/releases/v5.12.0/js/all.js" data-auto-replace-svg="nest"></script>
-
     <!-- viewport -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <!-- App CSS -->
     <link rel="stylesheet" href="/styles/layout.css" type="text/css" />
     <link rel="stylesheet" href="/styles/nav.css" type="text/css" />
@@ -23,29 +20,26 @@
     <link rel="stylesheet" href="/styles/new-tweet.css" type="text/css" />
     <link rel="stylesheet" href="/styles/tweets.css" type="text/css" />
     <link rel="stylesheet" href="/styles/media.css" type="text/css" />
-
     <!-- External JS -->
     <script type="text/javascript" src="/vendor/jquery-2.2.3.min.js"></script>
-
     <!-- App JS -->
     <script type="text/javascript" src="/scripts/client.js"></script>
-    
     <!--App Counter-->
     <script
       type="text/javascript"
       src="/scripts/composer-char-counter.js"
     ></script>
   </head>
-
   <body>
     <!-- Top nav bar (fixed) -->
     <nav>
-      <span>Spill the Tea!</span>
-      <button id="writeTweet">Write a Tweet!</button>
-   
+      <div>
+        <img src='https://cdn3.iconfinder.com/data/icons/yummicon-pro/100/059_Tea-512.png' height='40px'></img>
+        <span>The Tea!</span>
+      </div>
+      <button id="writeTweet" class='order'>☕Spill Some Tea!!!</button>
     </nav>
     <button onclick="topFunction()" id="myBtn" title="Go to top">    <i class="fas fa-angle-double-up"></i></button>
-
     <header>
       <div>
         <img class='headshot'src="/images/profile-hex.png" />
@@ -56,17 +50,16 @@
     </header>
     <!-- Page-specific (main) content here -->
     <main class="container">
-      <section class="new-tweet">
-      
+      <section class="new-tweet">  
         <p id='charactersAlert'>Too Much Tea</p>
-        <p id="validInput">Spill Some Tea!</p>
+        <p id="validInput">Cup Looks Empty &#128533 Spill Some Tea!</p>
         <form action="/tweets" method="post" id="createTweet">
           <textarea
             name="text"
             id="textInput"
             placeholder="What are you humming about?"
           ></textarea>
-          <input type="submit" value="Tweet" />
+          <input type="submit" value="Spill it" />
           <span class="counter" id="counter">140</span>
         </form>
       </section>
@@ -75,7 +68,7 @@
   </body>
       <!--Top Scroll-->
   <script>
-    var mybutton = document.getElementById("myBtn");
+    const mybutton = document.getElementById("myBtn");
     window.onscroll = function() {scrollFunction()};
 
     function scrollFunction() {
@@ -91,5 +84,4 @@
       document.documentElement.scrollTop = 0;
     }
     </script>
-    
 </html>
